@@ -11,7 +11,7 @@ struct Magic8Ball {
     
     //open the libaray
     //command-shift-l
-    func getResponse() -> String {
+  static  func getResponse() -> String {
         
         let responses = [
             "It is certain",

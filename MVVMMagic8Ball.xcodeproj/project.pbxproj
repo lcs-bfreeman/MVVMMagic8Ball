@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		D7C8B92826F4ED2900CE97F0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C8B92726F4ED2900CE97F0 /* main.swift */; };
 		D7C8B93226F4F00500CE97F0 /* Magic8Ball.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C8B93126F4F00500CE97F0 /* Magic8Ball.swift */; };
+		D7C8B93426F4F31900CE97F0 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C8B93326F4F31900CE97F0 /* Session.swift */; };
+		D7C8B93A26F4F5EE00CE97F0 /* AdviceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C8B93926F4F5EE00CE97F0 /* AdviceViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +29,8 @@
 		D7C8B92426F4ED2900CE97F0 /* MVVMMagic8Ball */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MVVMMagic8Ball; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7C8B92726F4ED2900CE97F0 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		D7C8B93126F4F00500CE97F0 /* Magic8Ball.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magic8Ball.swift; sourceTree = "<group>"; };
+		D7C8B93326F4F31900CE97F0 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		D7C8B93926F4F5EE00CE97F0 /* AdviceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +63,9 @@
 		D7C8B92626F4ED2900CE97F0 /* MVVMMagic8Ball */ = {
 			isa = PBXGroup;
 			children = (
+				D7C8B93826F4F56100CE97F0 /* ViewModels */,
+				D7C8B93526F4F52C00CE97F0 /* Views */,
 				D7C8B92E26F4EFB800CE97F0 /* Model */,
-				D7C8B92726F4ED2900CE97F0 /* main.swift */,
 			);
 			path = MVVMMagic8Ball;
 			sourceTree = "<group>";
@@ -69,8 +74,25 @@
 			isa = PBXGroup;
 			children = (
 				D7C8B93126F4F00500CE97F0 /* Magic8Ball.swift */,
+				D7C8B93326F4F31900CE97F0 /* Session.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		D7C8B93526F4F52C00CE97F0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D7C8B92726F4ED2900CE97F0 /* main.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D7C8B93826F4F56100CE97F0 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D7C8B93926F4F5EE00CE97F0 /* AdviceViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,8 +153,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7C8B93A26F4F5EE00CE97F0 /* AdviceViewModel.swift in Sources */,
 				D7C8B92826F4ED2900CE97F0 /* main.swift in Sources */,
 				D7C8B93226F4F00500CE97F0 /* Magic8Ball.swift in Sources */,
+				D7C8B93426F4F31900CE97F0 /* Session.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

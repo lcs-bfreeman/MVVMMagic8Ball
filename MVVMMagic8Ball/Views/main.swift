@@ -13,6 +13,10 @@
 
 import Foundation
 
+// Make an instance of the view model
+
+var advisor = AdviceViewModel()
+
 // Program name
 print("MAGIC 8 BALL")
 print("============")
@@ -33,6 +37,8 @@ print("")
 print("You said: \(input)")
 print("")
 
+
+
 // Select a random value
 let value = Int.random(in: 1...20)
 
@@ -40,5 +46,11 @@ let value = Int.random(in: 1...20)
 
 
 // Provide the advice by making an instance of the Magic8Ball type
-let advisor = Magic8Ball()
-print(advisor.getResponse())
+print(advisor.provideResponseFor(givenQuery: input))
+
+// iterate over all pst sessions
+for priorsession in advisor.session {
+    print(priorsession.question)
+    print(priorsession.response)
+
+}
