@@ -36,14 +36,9 @@ print("")
 // Select a random value
 let value = Int.random(in: 1...20)
 
-// Provide a response based on the random value
-// BASED UPON: https://en.wikipedia.org/wiki/Magic_8-Ball#Possible_answers
-// TIP: Use the library to get code templates
-//      Command-Shift-L
-//
 
 
 
-
-// Provide the advice
-print(responses.randomElement()!)
+// Provide the advice by making an instance of the Magic8Ball type
+let advisor = Magic8Ball()
+print(advisor.getResponse())
